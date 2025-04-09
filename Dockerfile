@@ -13,10 +13,8 @@ RUN mkdir -p /opt && \
     chmod -R 755 /opt/ && \
     rm /tmp/layer.zip
 
-# Copy package.json and package-lock.json
-COPY package*.json ${LAMBDA_TASK_ROOT}/
-
 # Install npm dependencies
+RUN npm init -y
 RUN npm install
 
 # Copy function code

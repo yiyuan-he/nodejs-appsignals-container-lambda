@@ -9,7 +9,6 @@ This document outlines the necessary steps to download the `layer.zip` artifact 
 ## Prerequisites
 - AWS CLI configured with your credentials
 - Docker installed
-- Node.js (v18 or later)
 - These instructions assume you are on `x86_64` platform
 
 ## 1. Set Up Project Structure
@@ -18,18 +17,6 @@ Create a directory for you Lambda function:
 ```console
 mkdir nodejs-appsignals-container-lambda && \
 cd nodejs-appsignals-container-lambda
-```
-
-Initialize a Node.js project:
-
-```console
-npm init -y
-```
-
-Install required dependencies:
-
-```console
-npm install aws-sdk
 ```
 
 ## 2. Lambda Function Code
