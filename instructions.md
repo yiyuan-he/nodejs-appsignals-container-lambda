@@ -16,8 +16,8 @@ This document outlines the necessary steps to download the `layer.zip` artifact 
 Create a directory for you Lambda function:
 
 ```console
-mkdir nodejs-lambda-function && \
-cd nodejs-lambda-function
+mkdir nodejs-appsignals-container-lambda && \
+cd nodejs-appsignals-container-lambda
 ```
 
 Initialize a Node.js project:
