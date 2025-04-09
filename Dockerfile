@@ -2,7 +2,7 @@
 FROM public.ecr.aws/lambda/nodejs:22
 
 # Install utilities
-RUN yum install -y unzip wget
+RUN dnf install -y unzip wget
 
 # Download the OpenTelemetry Layer with AppSignals Support
 RUN wget https://github.com/aws-observability/aws-otel-js-instrumentation/releases/latest/download/layer.zip -O /tmp/layer.zip
